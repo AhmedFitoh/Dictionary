@@ -10,10 +10,10 @@ import SwiftUI
 @main
 struct DictionaryApp: App {
     let persistenceController = PersistenceController.shared
-
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SearchScreen()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
