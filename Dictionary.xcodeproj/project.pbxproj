@@ -14,19 +14,11 @@
 			remoteGlobalIDString = 9CEA258C2D686A70009CEC34;
 			remoteInfo = Dictionary;
 		};
-		9CEA25AD2D686A71009CEC34 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9CEA25852D686A70009CEC34 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9CEA258C2D686A70009CEC34;
-			remoteInfo = Dictionary;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		9CEA258D2D686A70009CEC34 /* Dictionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dictionary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CEA25A22D686A71009CEC34 /* DictionaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DictionaryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9CEA25AC2D686A71009CEC34 /* DictionaryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DictionaryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -38,11 +30,6 @@
 		9CEA25A52D686A71009CEC34 /* DictionaryTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = DictionaryTests;
-			sourceTree = "<group>";
-		};
-		9CEA25AF2D686A71009CEC34 /* DictionaryUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = DictionaryUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -62,13 +49,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9CEA25A92D686A71009CEC34 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -77,7 +57,6 @@
 			children = (
 				9CEA258F2D686A70009CEC34 /* Dictionary */,
 				9CEA25A52D686A71009CEC34 /* DictionaryTests */,
-				9CEA25AF2D686A71009CEC34 /* DictionaryUITests */,
 				9CEA258E2D686A70009CEC34 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,7 +66,6 @@
 			children = (
 				9CEA258D2D686A70009CEC34 /* Dictionary.app */,
 				9CEA25A22D686A71009CEC34 /* DictionaryTests.xctest */,
-				9CEA25AC2D686A71009CEC34 /* DictionaryUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,29 +118,6 @@
 			productReference = 9CEA25A22D686A71009CEC34 /* DictionaryTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		9CEA25AB2D686A71009CEC34 /* DictionaryUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9CEA25BC2D686A71009CEC34 /* Build configuration list for PBXNativeTarget "DictionaryUITests" */;
-			buildPhases = (
-				9CEA25A82D686A71009CEC34 /* Sources */,
-				9CEA25A92D686A71009CEC34 /* Frameworks */,
-				9CEA25AA2D686A71009CEC34 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9CEA25AE2D686A71009CEC34 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				9CEA25AF2D686A71009CEC34 /* DictionaryUITests */,
-			);
-			name = DictionaryUITests;
-			packageProductDependencies = (
-			);
-			productName = DictionaryUITests;
-			productReference = 9CEA25AC2D686A71009CEC34 /* DictionaryUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -178,10 +133,7 @@
 					};
 					9CEA25A12D686A71009CEC34 = {
 						CreatedOnToolsVersion = 16.1;
-						TestTargetID = 9CEA258C2D686A70009CEC34;
-					};
-					9CEA25AB2D686A71009CEC34 = {
-						CreatedOnToolsVersion = 16.1;
+						LastSwiftMigration = 1610;
 						TestTargetID = 9CEA258C2D686A70009CEC34;
 					};
 				};
@@ -202,7 +154,6 @@
 			targets = (
 				9CEA258C2D686A70009CEC34 /* Dictionary */,
 				9CEA25A12D686A71009CEC34 /* DictionaryTests */,
-				9CEA25AB2D686A71009CEC34 /* DictionaryUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -216,13 +167,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		9CEA25A02D686A71009CEC34 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9CEA25AA2D686A71009CEC34 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -246,13 +190,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9CEA25A82D686A71009CEC34 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -260,11 +197,6 @@
 			isa = PBXTargetDependency;
 			target = 9CEA258C2D686A70009CEC34 /* Dictionary */;
 			targetProxy = 9CEA25A32D686A71009CEC34 /* PBXContainerItemProxy */;
-		};
-		9CEA25AE2D686A71009CEC34 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9CEA258C2D686A70009CEC34 /* Dictionary */;
-			targetProxy = 9CEA25AD2D686A71009CEC34 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -395,7 +327,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Dictionary/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Dictionary/Resources/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -423,7 +355,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Dictionary/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Dictionary/Resources/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -448,6 +380,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -456,6 +389,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = AhmedFitoh.DictionaryTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dictionary.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Dictionary";
@@ -466,6 +400,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -477,38 +412,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dictionary.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Dictionary";
-			};
-			name = Release;
-		};
-		9CEA25BD2D686A71009CEC34 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = AhmedFitoh.DictionaryUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Dictionary;
-			};
-			name = Debug;
-		};
-		9CEA25BE2D686A71009CEC34 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = AhmedFitoh.DictionaryUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Dictionary;
 			};
 			name = Release;
 		};
@@ -538,15 +441,6 @@
 			buildConfigurations = (
 				9CEA25BA2D686A71009CEC34 /* Debug */,
 				9CEA25BB2D686A71009CEC34 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9CEA25BC2D686A71009CEC34 /* Build configuration list for PBXNativeTarget "DictionaryUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9CEA25BD2D686A71009CEC34 /* Debug */,
-				9CEA25BE2D686A71009CEC34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

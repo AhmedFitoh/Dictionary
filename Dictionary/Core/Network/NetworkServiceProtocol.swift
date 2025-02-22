@@ -26,6 +26,13 @@ actor NetworkService: NetworkServiceProtocol {
     /// Timeout interval for requests in seconds
     private let timeoutInterval: TimeInterval = 15
     
+    /// Session instance for remote requests
+    private let session: URLSession
+    
+    init(session: URLSession = .shared) {
+        self.session = session
+    }
+    
     func fetchWordDefinition(word: String) async throws -> WordDefinitionResponse {
         guard let url = URL(string: baseURL + word.lowercased()) else {
             throw NetworkError.invalidURL
@@ -35,7 +42,7 @@ actor NetworkService: NetworkServiceProtocol {
         request.timeoutInterval = timeoutInterval
         
         do {
-            let (data, response) = try await URLSession.shared.data(for: request)
+            let (data, response) = try await session.data(for: request)
             
             guard let httpResponse = response as? HTTPURLResponse else {
                 throw NetworkError.serverError(0)
